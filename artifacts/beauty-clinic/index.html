@@ -8,12 +8,12 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
 
-  <!-- ═══════════════ NAVBAR ═══════════════ -->
+  <!-- ══════ NAVBAR ══════ -->
   <nav class="navbar" id="navbar">
     <div class="nav-container">
       <a href="#home" class="nav-logo">
@@ -22,17 +22,17 @@
       </a>
 
       <ul class="nav-links" id="navLinks">
-        <li><a href="#home" class="nav-link active">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#services" class="nav-link">Services</a></li>
-        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#home"         class="nav-link active">Home</a></li>
+        <li><a href="#about"        class="nav-link">About</a></li>
+        <li><a href="#services"     class="nav-link">Services</a></li>
+        <li><a href="#gallery"      class="nav-link">Gallery</a></li>
         <li><a href="#testimonials" class="nav-link">Stories</a></li>
-        <li><a href="#team" class="nav-link">Team</a></li>
-        <li><a href="#booking" class="nav-link">Contact</a></li>
+        <li><a href="#team"         class="nav-link">Team</a></li>
+        <li><a href="#booking"      class="nav-link">Contact</a></li>
       </ul>
 
       <div class="nav-actions">
-        <a href="#booking" class="btn btn-gold nav-cta">Book Now</a>
+        <a href="#booking" class="btn btn-gold btn-sm nav-cta">Book Now</a>
         <button class="hamburger" id="hamburger" aria-label="Toggle menu">
           <span></span><span></span><span></span>
         </button>
@@ -40,57 +40,60 @@
     </div>
   </nav>
 
-  <!-- ═══════════════ HERO ═══════════════ -->
+  <!-- ══════ HERO ══════ -->
   <section class="hero" id="home">
     <div class="hero-bg">
       <div class="hero-orb hero-orb-1"></div>
       <div class="hero-orb hero-orb-2"></div>
       <div class="hero-orb hero-orb-3"></div>
-      <div class="hero-grid"></div>
+      <div class="hero-noise"></div>
     </div>
 
     <div class="hero-content">
-      <div class="hero-badge fade-up">
-        <span class="badge-dot"></span>
-        Trusted by 10,000+ Clients
-      </div>
-      <h1 class="hero-title fade-up">
-        Reveal Your<br />
-        <em>Radiant</em> Self
-      </h1>
-      <p class="hero-subtitle fade-up">
-        Where science meets artistry. Experience transformative aesthetic treatments
-        in an atmosphere of pure luxury and clinical excellence.
-      </p>
-      <div class="hero-actions fade-up">
-        <a href="#booking" class="btn btn-gold btn-lg">Book Consultation</a>
-        <a href="#services" class="btn btn-outline btn-lg">Explore Treatments</a>
+      <div class="hero-eyebrow">
+        <span class="hero-eyebrow-dot"></span>
+        <span class="hero-eyebrow-line"></span>
+        Trusted by 10,000+ Clients Worldwide
       </div>
 
-      <div class="hero-stats fade-up">
+      <h1 class="hero-title">
+        Reveal Your<br /><em>Radiant</em> Self
+      </h1>
+
+      <p class="hero-subtitle">
+        Where science meets artistry. Experience transformative aesthetic
+        treatments in an atmosphere of pure luxury and clinical excellence.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#booking"  class="btn btn-gold btn-lg">Book Consultation</a>
+        <a href="#services" class="btn btn-ghost btn-lg">Explore Treatments</a>
+      </div>
+
+      <div class="hero-stats">
         <div class="hero-stat">
-          <span class="stat-number" data-target="10000">0</span><span class="stat-plus">+</span>
+          <span><span class="stat-number" data-target="10000">0</span><span class="stat-plus">+</span></span>
           <span class="stat-label">Happy Clients</span>
         </div>
-        <div class="hero-stat-divider"></div>
+        <div class="hero-stat-div"></div>
         <div class="hero-stat">
-          <span class="stat-number" data-target="15">0</span><span class="stat-plus">+</span>
+          <span><span class="stat-number" data-target="15">0</span><span class="stat-plus">+</span></span>
           <span class="stat-label">Years Experience</span>
         </div>
-        <div class="hero-stat-divider"></div>
+        <div class="hero-stat-div"></div>
         <div class="hero-stat">
-          <span class="stat-number" data-target="98">0</span><span class="stat-plus">%</span>
+          <span><span class="stat-number" data-target="98">0</span><span class="stat-plus">%</span></span>
           <span class="stat-label">Satisfaction Rate</span>
         </div>
       </div>
     </div>
 
     <div class="hero-visual">
-      <div class="hero-card glass-card">
-        <div class="hero-card-img hero-img-main">
-          <div class="img-overlay"></div>
-          <div class="floating-badge glass-card">
-            <span class="badge-icon">⭐</span>
+      <div class="hero-main-card glass-card">
+        <div class="hero-img-main img-ph g1">
+          <div class="hero-img-overlay"></div>
+          <div class="hero-float-badge glass-card">
+            <div class="b-icon">✦</div>
             <div>
               <strong>Award Winning</strong>
               <span>Best Clinic 2024</span>
@@ -98,73 +101,116 @@
           </div>
         </div>
       </div>
-      <div class="hero-card-sm glass-card">
-        <div class="hero-img-sm hero-img-alt">
-          <div class="img-overlay"></div>
-        </div>
+      <div class="hero-accent-card glass-card">
+        <div class="hero-img-accent img-ph g2"></div>
       </div>
     </div>
 
-    <div class="scroll-indicator">
-      <div class="scroll-line"></div>
+    <div class="hero-scroll">
+      <div class="hero-scroll-line"></div>
       <span>Scroll</span>
     </div>
   </section>
 
-  <!-- ═══════════════ ABOUT ═══════════════ -->
+  <!-- ══════ MARQUEE STRIP ══════ -->
+  <div class="marquee-strip" aria-hidden="true">
+    <div class="marquee-track">
+      <!-- set 1 -->
+      <div class="marquee-set">
+        <div class="marquee-item"><strong>10,000+</strong> Satisfied Clients</div>
+        <div class="marquee-sep"></div>
+        <div class="marquee-item"><strong>FDA-Approved</strong> Treatments</div>
+        <div class="marquee-sep"></div>
+        <div class="marquee-item"><strong>15 Years</strong> of Excellence</div>
+        <div class="marquee-sep"></div>
+        <div class="marquee-item"><strong>Board-Certified</strong> Physicians</div>
+        <div class="marquee-sep"></div>
+        <div class="marquee-item"><strong>Award Winning</strong> Clinic 2024</div>
+        <div class="marquee-sep"></div>
+        <div class="marquee-item"><strong>ISO 9001:2015</strong> Certified</div>
+        <div class="marquee-sep"></div>
+        <div class="marquee-item"><strong>Zero</strong> Downtime Treatments</div>
+        <div class="marquee-sep"></div>
+        <div class="marquee-item"><strong>Complimentary</strong> Consultations</div>
+        <div class="marquee-sep"></div>
+      </div>
+      <!-- set 2 (duplicate for seamless loop) -->
+      <div class="marquee-set" aria-hidden="true">
+        <div class="marquee-item"><strong>10,000+</strong> Satisfied Clients</div>
+        <div class="marquee-sep"></div>
+        <div class="marquee-item"><strong>FDA-Approved</strong> Treatments</div>
+        <div class="marquee-sep"></div>
+        <div class="marquee-item"><strong>15 Years</strong> of Excellence</div>
+        <div class="marquee-sep"></div>
+        <div class="marquee-item"><strong>Board-Certified</strong> Physicians</div>
+        <div class="marquee-sep"></div>
+        <div class="marquee-item"><strong>Award Winning</strong> Clinic 2024</div>
+        <div class="marquee-sep"></div>
+        <div class="marquee-item"><strong>ISO 9001:2015</strong> Certified</div>
+        <div class="marquee-sep"></div>
+        <div class="marquee-item"><strong>Zero</strong> Downtime Treatments</div>
+        <div class="marquee-sep"></div>
+        <div class="marquee-item"><strong>Complimentary</strong> Consultations</div>
+        <div class="marquee-sep"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════ ABOUT ══════ -->
   <section class="about section" id="about">
     <div class="container">
       <div class="about-grid">
+
         <div class="about-visual reveal-left">
-          <div class="about-img-stack">
-            <div class="about-img-main img-gradient img-gradient-1">
-              <div class="about-img-badge glass-card">
-                <span class="about-badge-icon">✦</span>
-                <p>Certified Excellence</p>
-                <strong>ISO 9001:2015</strong>
-              </div>
-            </div>
-            <div class="about-img-secondary img-gradient img-gradient-2"></div>
+          <div class="about-img-main img-ph g1"></div>
+          <div class="about-img-secondary img-ph g2"></div>
+          <div class="about-cert-badge glass-card">
+            <span class="about-cert-icon">✦</span>
+            <p>Certified Excellence</p>
+            <strong>ISO 9001:2015</strong>
           </div>
-          <div class="about-experience-badge">
-            <span class="exp-number">15</span>
-            <span class="exp-label">Years of Artistry</span>
+          <div class="about-exp-badge">
+            <span class="exp-num">15</span>
+            <span class="exp-text">Years of Artistry</span>
           </div>
         </div>
 
         <div class="about-content reveal-right">
-          <div class="section-label">About Lumière</div>
+          <div class="section-eyebrow-inline">
+            <span class="section-label">About Lumière</span>
+          </div>
           <h2 class="section-title">Where Beauty<br />Meets <em>Science</em></h2>
+
           <p class="about-lead">
-            Founded in 2009, Lumière Aesthetic Clinic has been at the forefront of advanced aesthetic medicine,
-            combining cutting-edge technology with the gentle touch of artistry.
+            "Founded in 2009, we've been at the forefront of advanced aesthetic medicine — combining
+            cutting-edge technology with the gentle touch of artistry."
           </p>
-          <p class="about-text">
-            Our team of board-certified physicians and aesthetic specialists are dedicated to enhancing
-            your natural beauty with personalized treatment plans. Every client receives a bespoke experience
-            designed around their unique features and desired outcomes.
+          <p class="about-body">
+            Our team of board-certified physicians and aesthetic specialists dedicate themselves to
+            enhancing your natural beauty through personalized treatment plans. Every client receives
+            a bespoke experience designed around their unique features and desired outcomes.
           </p>
 
           <div class="about-features">
             <div class="about-feature">
-              <div class="feature-icon">⚕</div>
-              <div>
+              <div class="feat-icon">⚕</div>
+              <div class="feat-text">
                 <strong>Board-Certified Physicians</strong>
                 <p>All treatments performed by licensed medical professionals</p>
               </div>
             </div>
             <div class="about-feature">
-              <div class="feature-icon">✦</div>
-              <div>
+              <div class="feat-icon">✦</div>
+              <div class="feat-text">
                 <strong>FDA-Approved Treatments</strong>
-                <p>Only the safest, clinically-proven technologies</p>
+                <p>Only the safest, clinically-proven technologies and techniques</p>
               </div>
             </div>
             <div class="about-feature">
-              <div class="feature-icon">◈</div>
-              <div>
+              <div class="feat-icon">◈</div>
+              <div class="feat-text">
                 <strong>Personalized Care</strong>
-                <p>Customized plans for your unique skin type and goals</p>
+                <p>Bespoke treatment plans tailored to your unique skin type and goals</p>
               </div>
             </div>
           </div>
@@ -175,128 +221,141 @@
     </div>
   </section>
 
-  <!-- ═══════════════ SERVICES ═══════════════ -->
+  <!-- ══════ SERVICES ══════ -->
   <section class="services section" id="services">
+    <div class="services-gold-line"></div>
     <div class="container">
       <div class="section-header reveal">
-        <div class="section-label">Our Treatments</div>
+        <div class="section-eyebrow">
+          <span class="section-label">Our Treatments</span>
+        </div>
         <h2 class="section-title">Signature <em>Services</em></h2>
-        <p class="section-desc">Premium aesthetic treatments tailored to reveal your most confident self</p>
+        <p class="section-desc">Premium aesthetic treatments tailored to reveal your most confident, radiant self</p>
       </div>
 
       <div class="services-grid">
+
         <div class="service-card reveal" data-delay="0">
-          <div class="service-icon-wrap">
-            <div class="service-icon">◈</div>
+          <div class="service-img">
+            <div class="img-ph g3" style="width:100%;height:100%;"></div>
+            <div class="service-num">01</div>
           </div>
-          <div class="service-img img-gradient img-gradient-3"></div>
-          <div class="service-content">
-            <h3>Facial Rejuvenation</h3>
-            <p>Advanced anti-aging treatments including dermal fillers, Botox, and PRP therapy for a naturally youthful glow.</p>
+          <div class="service-body">
+            <h3 class="service-title">Facial Rejuvenation</h3>
+            <p class="service-desc">Advanced anti-aging treatments including dermal fillers, Botox, and PRP therapy for a naturally youthful glow.</p>
             <div class="service-tags">
-              <span>Botox</span>
-              <span>Fillers</span>
-              <span>PRP</span>
+              <span>Botox</span><span>Fillers</span><span>PRP</span>
             </div>
-            <a href="#booking" class="service-link">Learn More <span>→</span></a>
+            <a href="#booking" class="service-cta">
+              Learn More
+              <span class="arrow">→</span>
+            </a>
           </div>
         </div>
 
         <div class="service-card reveal" data-delay="100">
-          <div class="service-icon-wrap">
-            <div class="service-icon">⬡</div>
+          <div class="service-img">
+            <div class="img-ph g4" style="width:100%;height:100%;"></div>
+            <div class="service-num">02</div>
           </div>
-          <div class="service-img img-gradient img-gradient-4"></div>
-          <div class="service-content">
-            <h3>Laser Treatments</h3>
-            <p>State-of-the-art laser technology for skin resurfacing, pigmentation correction, and hair removal.</p>
+          <div class="service-body">
+            <h3 class="service-title">Laser Treatments</h3>
+            <p class="service-desc">State-of-the-art laser technology for skin resurfacing, pigmentation correction, and permanent hair removal.</p>
             <div class="service-tags">
-              <span>CO2 Laser</span>
-              <span>IPL</span>
-              <span>Nd:YAG</span>
+              <span>CO2 Laser</span><span>IPL</span><span>Nd:YAG</span>
             </div>
-            <a href="#booking" class="service-link">Learn More <span>→</span></a>
+            <a href="#booking" class="service-cta">
+              Learn More
+              <span class="arrow">→</span>
+            </a>
           </div>
         </div>
 
         <div class="service-card reveal" data-delay="200">
-          <div class="service-icon-wrap">
-            <div class="service-icon">✦</div>
+          <div class="service-img">
+            <div class="img-ph g5" style="width:100%;height:100%;"></div>
+            <div class="service-num">03</div>
           </div>
-          <div class="service-img img-gradient img-gradient-5"></div>
-          <div class="service-content">
-            <h3>Body Contouring</h3>
-            <p>Non-invasive sculpting treatments including CoolSculpting and radiofrequency for a toned, defined physique.</p>
+          <div class="service-body">
+            <h3 class="service-title">Body Contouring</h3>
+            <p class="service-desc">Non-invasive sculpting with CoolSculpting and radiofrequency to reveal a toned, defined physique.</p>
             <div class="service-tags">
-              <span>CoolSculpt</span>
-              <span>RF Lifting</span>
-              <span>HIFU</span>
+              <span>CoolSculpt</span><span>RF Lifting</span><span>HIFU</span>
             </div>
-            <a href="#booking" class="service-link">Learn More <span>→</span></a>
+            <a href="#booking" class="service-cta">
+              Learn More
+              <span class="arrow">→</span>
+            </a>
           </div>
         </div>
 
         <div class="service-card reveal" data-delay="0">
-          <div class="service-icon-wrap">
-            <div class="service-icon">◉</div>
+          <div class="service-img">
+            <div class="img-ph g6" style="width:100%;height:100%;"></div>
+            <div class="service-num">04</div>
           </div>
-          <div class="service-img img-gradient img-gradient-6"></div>
-          <div class="service-content">
-            <h3>Skin Care Rituals</h3>
-            <p>Luxurious medical-grade facials, chemical peels, and hydration therapies for radiant, healthy skin.</p>
+          <div class="service-body">
+            <h3 class="service-title">Skin Care Rituals</h3>
+            <p class="service-desc">Luxurious medical-grade facials, chemical peels, and hydration therapies for radiant, healthy skin.</p>
             <div class="service-tags">
-              <span>HydraFacial</span>
-              <span>Peels</span>
-              <span>Microneedling</span>
+              <span>HydraFacial</span><span>Peels</span><span>Microneedling</span>
             </div>
-            <a href="#booking" class="service-link">Learn More <span>→</span></a>
+            <a href="#booking" class="service-cta">
+              Learn More
+              <span class="arrow">→</span>
+            </a>
           </div>
         </div>
 
         <div class="service-card reveal" data-delay="100">
-          <div class="service-icon-wrap">
-            <div class="service-icon">⬢</div>
+          <div class="service-img">
+            <div class="img-ph g7" style="width:100%;height:100%;"></div>
+            <div class="service-num">05</div>
           </div>
-          <div class="service-img img-gradient img-gradient-7"></div>
-          <div class="service-content">
-            <h3>Thread Lifting</h3>
-            <p>Minimally invasive PDO thread lifts for an instant skin tightening effect without surgery or downtime.</p>
+          <div class="service-body">
+            <h3 class="service-title">Thread Lifting</h3>
+            <p class="service-desc">Minimally invasive PDO thread lifts delivering instant skin tightening without surgery or downtime.</p>
             <div class="service-tags">
-              <span>PDO Threads</span>
-              <span>Nose Lift</span>
-              <span>Brow Lift</span>
+              <span>PDO Threads</span><span>Nose Lift</span><span>Brow Lift</span>
             </div>
-            <a href="#booking" class="service-link">Learn More <span>→</span></a>
+            <a href="#booking" class="service-cta">
+              Learn More
+              <span class="arrow">→</span>
+            </a>
           </div>
         </div>
 
         <div class="service-card reveal" data-delay="200">
-          <div class="service-icon-wrap">
-            <div class="service-icon">◈</div>
+          <div class="service-img">
+            <div class="img-ph g8" style="width:100%;height:100%;"></div>
+            <div class="service-num">06</div>
           </div>
-          <div class="service-img img-gradient img-gradient-8"></div>
-          <div class="service-content">
-            <h3>Hair Restoration</h3>
-            <p>Advanced hair loss solutions including PRP hair therapy, mesotherapy, and exosome treatments.</p>
+          <div class="service-body">
+            <h3 class="service-title">Hair Restoration</h3>
+            <p class="service-desc">Advanced hair loss solutions including PRP hair therapy, mesotherapy, and cutting-edge exosome treatments.</p>
             <div class="service-tags">
-              <span>PRP Hair</span>
-              <span>Exosomes</span>
-              <span>Meso</span>
+              <span>PRP Hair</span><span>Exosomes</span><span>Meso</span>
             </div>
-            <a href="#booking" class="service-link">Learn More <span>→</span></a>
+            <a href="#booking" class="service-cta">
+              Learn More
+              <span class="arrow">→</span>
+            </a>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════ BEFORE/AFTER GALLERY ═══════════════ -->
+  <!-- ══════ GALLERY ══════ -->
   <section class="gallery section" id="gallery">
     <div class="container">
       <div class="section-header reveal">
-        <div class="section-label">Transformations</div>
+        <div class="section-eyebrow">
+          <span class="section-label">Transformations</span>
+        </div>
         <h2 class="section-title">Before &amp; <em>After</em></h2>
-        <p class="section-desc">Real results from our clients — their stories speak for themselves</p>
+        <p class="section-desc">Real results from real clients — drag the handle to reveal each transformation</p>
       </div>
 
       <div class="gallery-tabs reveal">
@@ -307,20 +366,14 @@
       </div>
 
       <div class="gallery-grid" id="galleryGrid">
+
         <div class="gallery-item reveal" data-category="face">
           <div class="ba-slider" data-slider>
-            <div class="ba-before img-gradient img-gradient-ba1">
-              <span class="ba-label">Before</span>
-            </div>
-            <div class="ba-after img-gradient img-gradient-ba1-after">
-              <span class="ba-label ba-label-after">After</span>
-            </div>
-            <div class="ba-handle">
-              <div class="ba-line"></div>
-              <div class="ba-circle">⟺</div>
-            </div>
+            <div class="ba-before img-ph gba1b"><span class="ba-label">Before</span></div>
+            <div class="ba-after  img-ph gba1a"><span class="ba-label ba-label-after">After</span></div>
+            <div class="ba-handle"><div class="ba-line"></div><div class="ba-circle">⟺</div></div>
           </div>
-          <div class="gallery-info">
+          <div class="gallery-caption">
             <h4>Facial Contouring</h4>
             <p>Dermal Fillers + Botox</p>
           </div>
@@ -328,18 +381,11 @@
 
         <div class="gallery-item reveal" data-category="skin">
           <div class="ba-slider" data-slider>
-            <div class="ba-before img-gradient img-gradient-ba2">
-              <span class="ba-label">Before</span>
-            </div>
-            <div class="ba-after img-gradient img-gradient-ba2-after">
-              <span class="ba-label ba-label-after">After</span>
-            </div>
-            <div class="ba-handle">
-              <div class="ba-line"></div>
-              <div class="ba-circle">⟺</div>
-            </div>
+            <div class="ba-before img-ph gba2b"><span class="ba-label">Before</span></div>
+            <div class="ba-after  img-ph gba2a"><span class="ba-label ba-label-after">After</span></div>
+            <div class="ba-handle"><div class="ba-line"></div><div class="ba-circle">⟺</div></div>
           </div>
-          <div class="gallery-info">
+          <div class="gallery-caption">
             <h4>Skin Rejuvenation</h4>
             <p>CO2 Laser Resurfacing</p>
           </div>
@@ -347,18 +393,11 @@
 
         <div class="gallery-item reveal" data-category="body">
           <div class="ba-slider" data-slider>
-            <div class="ba-before img-gradient img-gradient-ba3">
-              <span class="ba-label">Before</span>
-            </div>
-            <div class="ba-after img-gradient img-gradient-ba3-after">
-              <span class="ba-label ba-label-after">After</span>
-            </div>
-            <div class="ba-handle">
-              <div class="ba-line"></div>
-              <div class="ba-circle">⟺</div>
-            </div>
+            <div class="ba-before img-ph gba3b"><span class="ba-label">Before</span></div>
+            <div class="ba-after  img-ph gba3a"><span class="ba-label ba-label-after">After</span></div>
+            <div class="ba-handle"><div class="ba-line"></div><div class="ba-circle">⟺</div></div>
           </div>
-          <div class="gallery-info">
+          <div class="gallery-caption">
             <h4>Body Sculpting</h4>
             <p>CoolSculpting + RF</p>
           </div>
@@ -366,18 +405,11 @@
 
         <div class="gallery-item reveal" data-category="face">
           <div class="ba-slider" data-slider>
-            <div class="ba-before img-gradient img-gradient-ba4">
-              <span class="ba-label">Before</span>
-            </div>
-            <div class="ba-after img-gradient img-gradient-ba4-after">
-              <span class="ba-label ba-label-after">After</span>
-            </div>
-            <div class="ba-handle">
-              <div class="ba-line"></div>
-              <div class="ba-circle">⟺</div>
-            </div>
+            <div class="ba-before img-ph gba4b"><span class="ba-label">Before</span></div>
+            <div class="ba-after  img-ph gba4a"><span class="ba-label ba-label-after">After</span></div>
+            <div class="ba-handle"><div class="ba-line"></div><div class="ba-circle">⟺</div></div>
           </div>
-          <div class="gallery-info">
+          <div class="gallery-caption">
             <h4>Thread Lift</h4>
             <p>PDO Mono + Cog Threads</p>
           </div>
@@ -385,18 +417,11 @@
 
         <div class="gallery-item reveal" data-category="skin">
           <div class="ba-slider" data-slider>
-            <div class="ba-before img-gradient img-gradient-ba5">
-              <span class="ba-label">Before</span>
-            </div>
-            <div class="ba-after img-gradient img-gradient-ba5-after">
-              <span class="ba-label ba-label-after">After</span>
-            </div>
-            <div class="ba-handle">
-              <div class="ba-line"></div>
-              <div class="ba-circle">⟺</div>
-            </div>
+            <div class="ba-before img-ph gba5b"><span class="ba-label">Before</span></div>
+            <div class="ba-after  img-ph gba5a"><span class="ba-label ba-label-after">After</span></div>
+            <div class="ba-handle"><div class="ba-line"></div><div class="ba-circle">⟺</div></div>
           </div>
-          <div class="gallery-info">
+          <div class="gallery-caption">
             <h4>Acne Scars</h4>
             <p>Microneedling + PRP</p>
           </div>
@@ -404,113 +429,119 @@
 
         <div class="gallery-item reveal" data-category="body">
           <div class="ba-slider" data-slider>
-            <div class="ba-before img-gradient img-gradient-ba6">
-              <span class="ba-label">Before</span>
-            </div>
-            <div class="ba-after img-gradient img-gradient-ba6-after">
-              <span class="ba-label ba-label-after">After</span>
-            </div>
-            <div class="ba-handle">
-              <div class="ba-line"></div>
-              <div class="ba-circle">⟺</div>
-            </div>
+            <div class="ba-before img-ph gba6b"><span class="ba-label">Before</span></div>
+            <div class="ba-after  img-ph gba6a"><span class="ba-label ba-label-after">After</span></div>
+            <div class="ba-handle"><div class="ba-line"></div><div class="ba-circle">⟺</div></div>
           </div>
-          <div class="gallery-info">
+          <div class="gallery-caption">
             <h4>Hair Restoration</h4>
             <p>PRP + Exosome Therapy</p>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════ TESTIMONIALS ═══════════════ -->
+  <!-- ══════ TESTIMONIALS ══════ -->
   <section class="testimonials section" id="testimonials">
-    <div class="testimonials-bg">
-      <div class="testimonials-orb"></div>
-    </div>
+    <div class="testimonials-orb"></div>
     <div class="container">
       <div class="section-header reveal">
-        <div class="section-label">Client Stories</div>
-        <h2 class="section-title">Real People, <em>Real Results</em></h2>
+        <div class="section-eyebrow">
+          <span class="section-label">Client Stories</span>
+        </div>
+        <h2 class="section-title">Real People,<br /><em>Real Results</em></h2>
       </div>
 
       <div class="testimonials-slider reveal" id="testimonialsSlider">
         <div class="testimonials-track" id="testimonialsTrack">
+
           <div class="testimonial-card glass-card">
-            <div class="testimonial-stars">★★★★★</div>
+            <div class="t-stars">
+              <div class="t-star"></div><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div>
+            </div>
             <blockquote>
               "I was nervous about my first treatment, but the team at Lumière made me feel completely at ease.
-              The results exceeded all my expectations — my skin looks 10 years younger and I feel radiant."
+              The results exceeded every expectation — my skin looks ten years younger and I feel absolutely radiant."
             </blockquote>
-            <div class="testimonial-author">
-              <div class="author-avatar" style="background: linear-gradient(135deg, #C9A84C, #E8C96C);">S</div>
+            <div class="t-author">
+              <div class="t-avatar" style="background:linear-gradient(135deg,#C9A84C,#E8C96C);">S</div>
               <div>
-                <strong>Sarah M.</strong>
-                <span>Facial Rejuvenation Client</span>
+                <span class="t-name">Sarah M.</span>
+                <span class="t-role">Facial Rejuvenation Client</span>
               </div>
             </div>
           </div>
 
           <div class="testimonial-card glass-card">
-            <div class="testimonial-stars">★★★★★</div>
+            <div class="t-stars">
+              <div class="t-star"></div><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div>
+            </div>
             <blockquote>
               "The professionalism and attention to detail at Lumière is unmatched. My thread lift results were
-              exactly what I wanted — subtle, natural, and beautifully lifted. This clinic is extraordinary."
+              exactly what I wanted — subtle, natural, and beautifully lifted. This clinic is truly extraordinary."
             </blockquote>
-            <div class="testimonial-author">
-              <div class="author-avatar" style="background: linear-gradient(135deg, #8B5CF6, #A78BFA);">A</div>
+            <div class="t-author">
+              <div class="t-avatar" style="background:linear-gradient(135deg,#8B5CF6,#A78BFA);">A</div>
               <div>
-                <strong>Amelia R.</strong>
-                <span>Thread Lift Client</span>
+                <span class="t-name">Amelia R.</span>
+                <span class="t-role">Thread Lift Client</span>
               </div>
             </div>
           </div>
 
           <div class="testimonial-card glass-card">
-            <div class="testimonial-stars">★★★★★</div>
+            <div class="t-stars">
+              <div class="t-star"></div><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div>
+            </div>
             <blockquote>
-              "After struggling with acne scars for years, I finally found a solution that actually works.
+              "After struggling with acne scars for years, I finally found a solution that genuinely works.
               The microneedling and PRP combination transformed my skin completely. I can't stop looking in the mirror!"
             </blockquote>
-            <div class="testimonial-author">
-              <div class="author-avatar" style="background: linear-gradient(135deg, #EC4899, #F472B6);">J</div>
+            <div class="t-author">
+              <div class="t-avatar" style="background:linear-gradient(135deg,#EC4899,#F472B6);">J</div>
               <div>
-                <strong>Jessica L.</strong>
-                <span>Skin Resurfacing Client</span>
+                <span class="t-name">Jessica L.</span>
+                <span class="t-role">Skin Resurfacing Client</span>
               </div>
             </div>
           </div>
 
           <div class="testimonial-card glass-card">
-            <div class="testimonial-stars">★★★★★</div>
+            <div class="t-stars">
+              <div class="t-star"></div><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div>
+            </div>
             <blockquote>
-              "The laser hair removal was completely painless and incredibly effective. The clinic itself is
-              absolutely stunning and the staff treated me like royalty from the moment I walked in."
+              "The laser hair removal was completely painless and wonderfully effective. The clinic itself is
+              stunning and the staff treated me like royalty from the very moment I walked in."
             </blockquote>
-            <div class="testimonial-author">
-              <div class="author-avatar" style="background: linear-gradient(135deg, #0891B2, #38BDF8);">N</div>
+            <div class="t-author">
+              <div class="t-avatar" style="background:linear-gradient(135deg,#0891B2,#38BDF8);">N</div>
               <div>
-                <strong>Natasha K.</strong>
-                <span>Laser Treatment Client</span>
+                <span class="t-name">Natasha K.</span>
+                <span class="t-role">Laser Treatment Client</span>
               </div>
             </div>
           </div>
 
           <div class="testimonial-card glass-card">
-            <div class="testimonial-stars">★★★★★</div>
+            <div class="t-stars">
+              <div class="t-star"></div><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div><div class="t-star"></div>
+            </div>
             <blockquote>
-              "I've been to many clinics across the city but Lumière stands head and shoulders above the rest.
-              The doctors truly listen and the results of my body contouring treatment are phenomenal."
+              "I've visited many clinics across the city, but Lumière stands head and shoulders above them all.
+              The doctors truly listen, and the results of my body contouring treatment are simply phenomenal."
             </blockquote>
-            <div class="testimonial-author">
-              <div class="author-avatar" style="background: linear-gradient(135deg, #059669, #34D399);">M</div>
+            <div class="t-author">
+              <div class="t-avatar" style="background:linear-gradient(135deg,#059669,#34D399);">M</div>
               <div>
-                <strong>Monica T.</strong>
-                <span>Body Contouring Client</span>
+                <span class="t-name">Monica T.</span>
+                <span class="t-role">Body Contouring Client</span>
               </div>
             </div>
           </div>
+
         </div>
       </div>
 
@@ -522,20 +553,24 @@
     </div>
   </section>
 
-  <!-- ═══════════════ TEAM ═══════════════ -->
+  <!-- ══════ TEAM ══════ -->
   <section class="team section" id="team">
     <div class="container">
       <div class="section-header reveal">
-        <div class="section-label">Our Experts</div>
+        <div class="section-eyebrow">
+          <span class="section-label">Our Experts</span>
+        </div>
         <h2 class="section-title">Meet the <em>Team</em></h2>
         <p class="section-desc">Board-certified physicians and aesthetic specialists dedicated to your transformation</p>
       </div>
 
       <div class="team-grid">
+
         <div class="team-card reveal" data-delay="0">
-          <div class="team-img img-gradient img-gradient-t1">
+          <div class="team-photo">
+            <div class="img-ph gt1" style="width:100%;height:100%;"></div>
             <div class="team-overlay">
-              <div class="team-social">
+              <div class="team-socials">
                 <a href="#" aria-label="LinkedIn">in</a>
                 <a href="#" aria-label="Instagram">ig</a>
               </div>
@@ -543,19 +578,19 @@
           </div>
           <div class="team-info">
             <h3>Dr. Isabelle Laurent</h3>
-            <span class="team-role">Medical Director &amp; Aesthetic Physician</span>
+            <span class="team-spec">Medical Director &amp; Aesthetic Physician</span>
             <p>MD, FAAD — 18 years specializing in advanced facial aesthetics and regenerative medicine.</p>
-            <div class="team-certs">
-              <span>FAAD Certified</span>
-              <span>Botox Master</span>
+            <div class="team-tags">
+              <span>FAAD Certified</span><span>Botox Master</span>
             </div>
           </div>
         </div>
 
         <div class="team-card reveal" data-delay="150">
-          <div class="team-img img-gradient img-gradient-t2">
+          <div class="team-photo">
+            <div class="img-ph gt2" style="width:100%;height:100%;"></div>
             <div class="team-overlay">
-              <div class="team-social">
+              <div class="team-socials">
                 <a href="#" aria-label="LinkedIn">in</a>
                 <a href="#" aria-label="Instagram">ig</a>
               </div>
@@ -563,19 +598,19 @@
           </div>
           <div class="team-info">
             <h3>Dr. Marcus Chen</h3>
-            <span class="team-role">Laser &amp; Body Specialist</span>
+            <span class="team-spec">Laser &amp; Body Specialist</span>
             <p>MD, PhD — Pioneer in laser dermatology with 12 years of clinical research and practice.</p>
-            <div class="team-certs">
-              <span>Laser Certified</span>
-              <span>Body Expert</span>
+            <div class="team-tags">
+              <span>Laser Certified</span><span>Body Expert</span>
             </div>
           </div>
         </div>
 
         <div class="team-card reveal" data-delay="300">
-          <div class="team-img img-gradient img-gradient-t3">
+          <div class="team-photo">
+            <div class="img-ph gt3" style="width:100%;height:100%;"></div>
             <div class="team-overlay">
-              <div class="team-social">
+              <div class="team-socials">
                 <a href="#" aria-label="LinkedIn">in</a>
                 <a href="#" aria-label="Instagram">ig</a>
               </div>
@@ -583,19 +618,19 @@
           </div>
           <div class="team-info">
             <h3>Dr. Sophia Reyes</h3>
-            <span class="team-role">Thread &amp; Regenerative Specialist</span>
+            <span class="team-spec">Thread &amp; Regenerative Specialist</span>
             <p>MD, MRCP — Thread lifting pioneer with over 5,000 successful procedures performed globally.</p>
-            <div class="team-certs">
-              <span>Thread Expert</span>
-              <span>PRP Specialist</span>
+            <div class="team-tags">
+              <span>Thread Expert</span><span>PRP Specialist</span>
             </div>
           </div>
         </div>
 
         <div class="team-card reveal" data-delay="450">
-          <div class="team-img img-gradient img-gradient-t4">
+          <div class="team-photo">
+            <div class="img-ph gt4" style="width:100%;height:100%;"></div>
             <div class="team-overlay">
-              <div class="team-social">
+              <div class="team-socials">
                 <a href="#" aria-label="LinkedIn">in</a>
                 <a href="#" aria-label="Instagram">ig</a>
               </div>
@@ -603,54 +638,56 @@
           </div>
           <div class="team-info">
             <h3>Dr. Aiden Park</h3>
-            <span class="team-role">Hair Restoration Specialist</span>
+            <span class="team-spec">Hair Restoration Specialist</span>
             <p>MD, PhD — Leading expert in hair regeneration therapies including exosome and stem cell treatments.</p>
-            <div class="team-certs">
-              <span>Hair Expert</span>
-              <span>Stem Cell Cert.</span>
+            <div class="team-tags">
+              <span>Hair Expert</span><span>Stem Cell Cert.</span>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════ BOOKING / CONTACT ═══════════════ -->
+  <!-- ══════ BOOKING ══════ -->
   <section class="booking section" id="booking">
-    <div class="booking-bg">
-      <div class="booking-orb"></div>
-    </div>
+    <div class="booking-bg-orb"></div>
+    <div class="booking-bg-orb2"></div>
     <div class="container">
       <div class="booking-grid">
+
         <div class="booking-info reveal-left">
-          <div class="section-label">Book Now</div>
+          <div class="section-eyebrow-inline">
+            <span class="section-label">Book Now</span>
+          </div>
           <h2 class="section-title">Begin Your<br /><em>Transformation</em></h2>
-          <p>Schedule your complimentary consultation with one of our specialists and take the first step toward your most radiant self.</p>
+          <p>Schedule your complimentary consultation and take the first step toward your most radiant, confident self.</p>
 
           <div class="booking-details">
             <div class="booking-detail">
-              <div class="detail-icon">◎</div>
+              <div class="b-detail-icon">◎</div>
               <div>
                 <strong>Visit Us</strong>
                 <p>24 Mayfair Lane, London, W1K 3PL</p>
               </div>
             </div>
             <div class="booking-detail">
-              <div class="detail-icon">◎</div>
+              <div class="b-detail-icon">◎</div>
               <div>
                 <strong>Call Us</strong>
                 <p>+44 (0) 20 7123 4567</p>
               </div>
             </div>
             <div class="booking-detail">
-              <div class="detail-icon">◎</div>
+              <div class="b-detail-icon">◎</div>
               <div>
                 <strong>Opening Hours</strong>
-                <p>Mon – Sat: 9:00 AM – 7:00 PM</p>
+                <p>Monday – Saturday: 9:00 AM – 7:00 PM</p>
               </div>
             </div>
             <div class="booking-detail">
-              <div class="detail-icon">◎</div>
+              <div class="b-detail-icon">◎</div>
               <div>
                 <strong>Email Us</strong>
                 <p>hello@lumiereclinic.com</p>
@@ -659,10 +696,11 @@
           </div>
         </div>
 
-        <div class="booking-form-wrap glass-card reveal-right">
+        <div class="booking-form-card reveal-right">
           <h3>Request a Consultation</h3>
-          <p class="form-subtitle">Complimentary for new clients</p>
-          <form class="booking-form" id="bookingForm">
+          <p class="form-sub">Complimentary for all new clients</p>
+
+          <form class="form" id="bookingForm">
             <div class="form-row">
               <div class="form-group">
                 <label for="firstName">First Name</label>
@@ -679,7 +717,7 @@
             </div>
             <div class="form-group">
               <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" placeholder="+44 7700 900000" />
+              <input type="tel" id="phone" placeholder="+44 7700 900 000" />
             </div>
             <div class="form-group">
               <label for="service">Treatment of Interest</label>
@@ -705,36 +743,45 @@
             <button type="submit" class="btn btn-gold btn-full">Book My Consultation</button>
             <p class="form-disclaimer">Your information is kept strictly confidential. No obligation, no pressure.</p>
           </form>
-          <div class="form-success" id="formSuccess" style="display:none;">
+
+          <div class="form-success" id="formSuccess">
             <div class="success-icon">✦</div>
             <h4>Request Received!</h4>
-            <p>Thank you for reaching out. Our team will contact you within 24 hours to confirm your consultation.</p>
+            <p>Thank you for reaching out. Our team will contact you within 24 hours to confirm your appointment.</p>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <!-- ══════ FOOTER ══════ -->
   <footer class="footer">
+    <div class="footer-ornament">
+      <div class="footer-ornament-line"></div>
+      <span class="footer-ornament-mark">✦</span>
+      <div class="footer-ornament-line"></div>
+    </div>
+
     <div class="footer-top">
       <div class="container">
         <div class="footer-grid">
+
           <div class="footer-brand">
             <a href="#home" class="nav-logo footer-logo">
               <span class="logo-mark">✦</span>
               <span class="logo-text">Lumière</span>
             </a>
-            <p>Where beauty meets science. Transformative aesthetic treatments in an atmosphere of pure luxury.</p>
+            <p>Where beauty meets science. Transformative aesthetic treatments in an atmosphere of pure luxury and clinical excellence.</p>
             <div class="footer-social">
-              <a href="#" aria-label="Instagram" class="social-btn">ig</a>
-              <a href="#" aria-label="Facebook" class="social-btn">fb</a>
-              <a href="#" aria-label="TikTok" class="social-btn">tk</a>
-              <a href="#" aria-label="YouTube" class="social-btn">yt</a>
+              <a href="#" class="social-btn" aria-label="Instagram">ig</a>
+              <a href="#" class="social-btn" aria-label="Facebook">fb</a>
+              <a href="#" class="social-btn" aria-label="TikTok">tk</a>
+              <a href="#" class="social-btn" aria-label="YouTube">yt</a>
             </div>
           </div>
 
-          <div class="footer-links-col">
+          <div class="footer-col">
             <h5>Treatments</h5>
             <ul>
               <li><a href="#services">Facial Rejuvenation</a></li>
@@ -746,7 +793,7 @@
             </ul>
           </div>
 
-          <div class="footer-links-col">
+          <div class="footer-col">
             <h5>Clinic</h5>
             <ul>
               <li><a href="#about">About Us</a></li>
@@ -758,14 +805,15 @@
             </ul>
           </div>
 
-          <div class="footer-newsletter">
+          <div class="footer-nl">
             <h5>Stay Beautiful</h5>
-            <p>Subscribe for exclusive offers, skincare tips, and treatment insights.</p>
-            <form class="newsletter-form" id="newsletterForm">
+            <p>Subscribe for exclusive offers, skincare insights, and treatment news delivered to your inbox.</p>
+            <form class="nl-form" id="nlForm">
               <input type="email" placeholder="your@email.com" required />
               <button type="submit" class="btn btn-gold btn-sm">Subscribe</button>
             </form>
           </div>
+
         </div>
       </div>
     </div>
@@ -782,9 +830,7 @@
     </div>
   </footer>
 
-  <!-- Back to Top -->
   <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
-
   <script src="./script.js"></script>
 </body>
 </html>
