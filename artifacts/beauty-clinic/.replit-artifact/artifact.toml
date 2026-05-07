@@ -15,11 +15,10 @@ paths = [ "/" ]
 localPort = 21315
 
 [services.development]
-run = "pnpm --filter @workspace/beauty-clinic run dev"
+run = "node /home/runner/workspace/artifacts/beauty-clinic/serve.js"
 
 [services.production]
-build = [ "pnpm", "--filter", "@workspace/beauty-clinic", "run", "build" ]
-publicDir = "artifacts/beauty-clinic/dist/public"
+publicDir = "artifacts/beauty-clinic"
 serve = "static"
 
 [[services.production.rewrites]]
