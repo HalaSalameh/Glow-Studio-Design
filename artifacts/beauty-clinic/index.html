@@ -3,544 +3,630 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="QM Glow Center — Premium aesthetic clinic offering advanced skincare, laser treatments, and transformative beauty procedures." />
-  <title>QM Glow Center | Premium Aesthetic Clinic</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%230D2B6E'/><text y='.9em' font-size='55' text-anchor='middle' x='50' fill='white' font-family='serif'>Q</text></svg>" />
+  <meta name="description" content="QM Glow Center — Science-based skin treatments. Get a personalized treatment plan from a certified specialist." />
+  <title>QM Glow Center | Advanced Aesthetic Clinic</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%231A4FBA'/><text y='.88em' font-size='62' text-anchor='middle' x='50' fill='white' font-family='serif' font-weight='700'>Q</text></svg>" />
 
   <!-- Bootstrap 5 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
 
-  <!-- ══════════════════════════════════════════
-       NAVBAR
-  ══════════════════════════════════════════ -->
-  <nav class="navbar navbar-expand-lg fixed-top qm-navbar" id="mainNav">
-    <div class="container">
+  <!-- ╔══════════════════════════════════════╗
+       ║  NAVBAR                              ║
+       ╚══════════════════════════════════════╝ -->
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar navbar-expand-lg" id="mainNav">
+      <div class="container nav-container">
 
-      <a class="navbar-brand qm-brand" href="#home">
-        <div class="brand-icon">Q</div>
-        <div class="brand-text">
-          <span class="brand-name">QM Glow</span>
-          <span class="brand-tagline">Aesthetic Center</span>
+        <!-- Logo -->
+        <a class="navbar-brand site-logo" href="#home">
+          <div class="logo-icon">Q</div>
+          <div class="logo-words">
+            <span class="logo-main">QM Glow</span>
+            <span class="logo-sub">Center</span>
+          </div>
+        </a>
+
+        <!-- Hamburger -->
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+          <span></span><span></span><span></span>
+        </button>
+
+        <!-- Links -->
+        <div class="nav-menu" id="navMenu">
+          <ul class="nav-list">
+            <li><a href="#home"         class="nav-link is-active">Home</a></li>
+            <li><a href="#about"        class="nav-link">About</a></li>
+            <li><a href="#services"     class="nav-link">Services</a></li>
+            <li><a href="#results"      class="nav-link">Results</a></li>
+            <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+            <li><a href="#booking"      class="nav-link">Contact</a></li>
+          </ul>
+          <a href="#booking" class="btn btn-nav-cta">Book Now</a>
         </div>
-      </a>
 
-      <button class="navbar-toggler qm-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Toggle navigation">
-        <span></span><span></span><span></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
-          <li class="nav-item"><a class="nav-link qm-link active" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link qm-link" href="#services">Services</a></li>
-          <li class="nav-item"><a class="nav-link qm-link" href="#results">Results</a></li>
-          <li class="nav-item"><a class="nav-link qm-link" href="#testimonials">Reviews</a></li>
-          <li class="nav-item"><a class="nav-link qm-link" href="#booking">Contact</a></li>
-          <li class="nav-item ms-lg-3">
-            <a class="btn qm-btn-primary" href="#booking">Book Now</a>
-          </li>
-        </ul>
       </div>
+    </nav>
+  </header>
 
+  <!-- ╔══════════════════════════════════════╗
+       ║  HERO                                ║
+       ╚══════════════════════════════════════╝ -->
+  <section class="hero" id="home">
+
+    <!-- Dark blue overlay -->
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <!-- Background visual (doctor/clinic gradient) -->
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-bg-img"></div>
     </div>
-  </nav>
 
-  <!-- ══════════════════════════════════════════
-       HERO
-  ══════════════════════════════════════════ -->
-  <section class="hero-section" id="home">
-    <div class="hero-overlay"></div>
-    <div class="hero-particles" aria-hidden="true">
-      <div class="particle p1"></div>
-      <div class="particle p2"></div>
-      <div class="particle p3"></div>
-      <div class="particle p4"></div>
+    <!-- Decorative mesh circles -->
+    <div class="hero-mesh" aria-hidden="true">
+      <div class="mesh-c mc1"></div>
+      <div class="mesh-c mc2"></div>
+      <div class="mesh-c mc3"></div>
     </div>
 
-    <div class="container hero-container">
-      <div class="row align-items-center min-vh-100">
-        <div class="col-lg-7 col-xl-6 hero-content">
+    <div class="container hero-body">
+      <div class="row min-vh-100 align-items-center">
 
-          <div class="hero-badge anim-fade-up" style="--delay:.0s">
-            <span class="badge-dot"></span>
-            Premium Aesthetic Clinic · Est. 2015
+        <!-- Left: empty on mobile, shows on desktop to make room for the bg photo feel -->
+        <div class="col-lg-5 d-none d-lg-block hero-visual-col">
+          <div class="hero-photo-frame">
+            <div class="hero-photo-grad"></div>
+            <div class="hero-photo-badge glass-pill">
+              <span class="badge-ring"></span>
+              <span>8+ Years of Expertise</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: headline + CTA -->
+        <div class="col-lg-7 hero-text-col">
+
+          <div class="hero-chip fade-in" style="--d:.0s">
+            <span class="chip-dot"></span>
+            Certified Aesthetic Specialist
           </div>
 
-          <h1 class="hero-title anim-fade-up" style="--delay:.12s">
-            Your Journey to<br />
-            <em>Radiant Confidence</em><br />
-            Starts Here
+          <h1 class="hero-heading fade-in" style="--d:.12s">
+            Tried Everything —<br />
+            Still the Same Problem?
           </h1>
 
-          <p class="hero-subtitle anim-fade-up" style="--delay:.24s">
-            Advanced aesthetic treatments delivered by board-certified specialists. 
-            Transform your appearance with science-backed procedures in a luxurious, 
-            discreet setting.
+          <p class="hero-copy fade-in" style="--d:.24s">
+            The issue isn't the products. It's not knowing <em>the real cause.</em><br />
+            We find it. We fix it. Step by step.
           </p>
 
-          <div class="hero-actions anim-fade-up" style="--delay:.36s">
-            <a href="#booking" class="btn qm-btn-primary btn-lg">
-              Book Free Consultation
-              <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
-            </a>
-            <a href="#results" class="btn qm-btn-ghost btn-lg">
-              View Results
-            </a>
-          </div>
-
-          <div class="hero-stats anim-fade-up" style="--delay:.48s">
-            <div class="hero-stat">
-              <span class="stat-n" data-target="5000">0</span><span class="stat-suf">+</span>
-              <span class="stat-l">Clients Served</span>
-            </div>
-            <div class="hero-stat-div"></div>
-            <div class="hero-stat">
-              <span class="stat-n" data-target="12">0</span><span class="stat-suf">+</span>
-              <span class="stat-l">Years Experience</span>
-            </div>
-            <div class="hero-stat-div"></div>
-            <div class="hero-stat">
-              <span class="stat-n" data-target="99">0</span><span class="stat-suf">%</span>
-              <span class="stat-l">Satisfaction</span>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="col-lg-5 col-xl-6 hero-visual anim-fade-up" style="--delay:.2s">
-          <div class="hero-card glass-card">
-            <div class="hero-card-img g-hero"></div>
-            <div class="hero-card-badge glass-card">
-              <div class="hcb-icon">★</div>
-              <div>
-                <strong>Award Winning</strong>
-                <span>Best Clinic 2024</span>
+          <div class="hero-trust fade-in" style="--d:.36s">
+            <div class="trust-chip">
+              <div class="tc-icon">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"/></svg>
               </div>
+              <span>Real Results</span>
+            </div>
+            <div class="trust-chip">
+              <div class="tc-icon">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M1 11.27c0-.246.033-.492.099-.73l1.523-5.521A2.75 2.75 0 015.273 3h9.454a2.75 2.75 0 012.651 2.019l1.523 5.52c.066.239.099.485.099.732V15a2 2 0 01-2 2H3a2 2 0 01-2-2v-3.73zm3.068-5.852A1.25 1.25 0 015.273 4.5h9.454a1.25 1.25 0 011.205.918l1.523 5.52a.75.75 0 01.045.262v.05a2.5 2.5 0 01-2.5 2.5H5a2.5 2.5 0 01-2.5-2.5V11.25c0-.09.015-.178.045-.262l1.523-5.52z" clip-rule="evenodd"/></svg>
+              </div>
+              <span>100s of Before/After</span>
+            </div>
+            <div class="trust-chip">
+              <div class="tc-icon">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-13a.75.75 0 00-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 000-1.5h-3.25V5z" clip-rule="evenodd"/></svg>
+              </div>
+              <span>8+ Years Experience</span>
             </div>
           </div>
-          <div class="hero-card-mini glass-card">
-            <div class="mini-img g-mini"></div>
+
+          <div class="hero-cta fade-in" style="--d:.48s">
+            <a href="#booking" class="btn btn-hero-primary">
+              Start Your Real Treatment
+              <svg class="btn-arrow" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
+            </a>
+            <p class="cta-subtext">One consultation saves you months of guessing</p>
           </div>
+
         </div>
       </div>
     </div>
 
-    <div class="hero-scroll-cue">
-      <div class="scroll-line"></div>
+    <div class="hero-scroll-hint fade-in" style="--d:.9s" aria-hidden="true">
+      <div class="scroll-bar"></div>
       <span>Scroll</span>
     </div>
   </section>
 
-  <!-- ══════════════════════════════════════════
-       SERVICES
-  ══════════════════════════════════════════ -->
-  <section class="section-pad bg-light-blue" id="services">
+  <!-- ╔══════════════════════════════════════╗
+       ║  ABOUT / PAIN POINT                  ║
+       ╚══════════════════════════════════════╝ -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+
+        <div class="col-lg-5 reveal-left">
+          <div class="about-visual">
+            <div class="av-photo av-photo-main"></div>
+            <div class="av-photo av-photo-mini"></div>
+            <div class="av-stat glass-card-white">
+              <span class="avs-num" data-target="5000">0</span><span class="avs-sym">+</span>
+              <span class="avs-label">Clients Transformed</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7 reveal-right">
+          <div class="eyebrow">About QM Glow</div>
+          <h2 class="section-title">We Don't Guess.<br />We <em>Diagnose.</em></h2>
+          <p class="section-body">Most people spend years trying products that treat symptoms — not causes. At QM Glow Center, our certified specialists identify the root of your skin concerns and build a precise, science-based treatment plan. No fillers, no fluff. Just results.</p>
+
+          <div class="about-pillars">
+            <div class="pillar">
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"/></svg>
+              </div>
+              <div>
+                <strong>Science-Based Protocols</strong>
+                <p>Every treatment is backed by clinical evidence and tailored to your skin biology.</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z"/></svg>
+              </div>
+              <div>
+                <strong>Personalized to You</strong>
+                <p>No generic treatments. We map your unique concerns and build a plan around them.</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.015H18V10.5zm-12 0h.008v.015H6V10.5z"/></svg>
+              </div>
+              <div>
+                <strong>Transparent Pricing</strong>
+                <p>Honest quotes, flexible payment plans, and no hidden charges — ever.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ╔══════════════════════════════════════╗
+       ║  SERVICES                            ║
+       ╚══════════════════════════════════════╝ -->
+  <section class="section services-section bg-blue-tint" id="services">
     <div class="container">
 
-      <div class="section-header text-center anim-reveal">
-        <div class="section-eyebrow">Our Treatments</div>
-        <h2 class="section-title">What We <em>Offer</em></h2>
-        <p class="section-desc">Precision aesthetic treatments designed to enhance your natural beauty with lasting, visible results.</p>
+      <div class="section-header text-center reveal">
+        <div class="eyebrow">What We Treat</div>
+        <h2 class="section-title">Our <em>Specialties</em></h2>
+        <p class="section-desc">Precision treatments targeting the root cause — not just the surface.</p>
       </div>
 
-      <div class="row g-4 mt-2">
-        <div class="col-md-6 col-lg-4 anim-reveal" data-delay="0">
-          <div class="service-card">
-            <div class="sc-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z"/></svg>
-            </div>
-            <div class="sc-num">01</div>
-            <h3 class="sc-title">Facial Rejuvenation</h3>
-            <p class="sc-desc">Botox, dermal fillers, and PRP therapy — natural-looking results that restore youthful radiance.</p>
-            <a href="#booking" class="sc-link">Book Treatment <span>→</span></a>
-          </div>
-        </div>
+      <div class="row g-4 mt-3">
 
-        <div class="col-md-6 col-lg-4 anim-reveal" data-delay="80">
-          <div class="service-card service-card--featured">
-            <div class="featured-badge">Most Popular</div>
-            <div class="sc-icon sc-icon--white">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z"/></svg>
-            </div>
-            <div class="sc-num sc-num--white">02</div>
-            <h3 class="sc-title sc-title--white">Laser Treatments</h3>
-            <p class="sc-desc sc-desc--white">Advanced laser resurfacing, pigmentation removal, and permanent hair reduction with state-of-the-art technology.</p>
-            <a href="#booking" class="sc-link sc-link--white">Book Treatment <span>→</span></a>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4 anim-reveal" data-delay="160">
-          <div class="service-card">
-            <div class="sc-icon">
+        <div class="col-sm-6 col-lg-4 reveal" data-delay="0">
+          <div class="svc-card">
+            <div class="svc-num">01</div>
+            <div class="svc-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"/></svg>
             </div>
-            <div class="sc-num">03</div>
-            <h3 class="sc-title">Skin Brightening</h3>
-            <p class="sc-desc">Medical-grade facials, chemical peels, and IV drip therapies for luminous, glowing skin all year round.</p>
-            <a href="#booking" class="sc-link">Book Treatment <span>→</span></a>
+            <h3>Skin Glow Therapy</h3>
+            <p>Medical-grade facials, vitamin infusions, and brightening peels that deliver luminous skin from within.</p>
+            <a href="#booking" class="svc-link">Book Session <span>→</span></a>
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-4 anim-reveal" data-delay="0">
-          <div class="service-card">
-            <div class="sc-icon">
+        <div class="col-sm-6 col-lg-4 reveal" data-delay="60">
+          <div class="svc-card svc-card--blue">
+            <div class="svc-badge-top">Most Requested</div>
+            <div class="svc-num svc-num--white">02</div>
+            <div class="svc-icon svc-icon--white">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z"/></svg>
+            </div>
+            <h3 style="color:#fff">Laser Treatments</h3>
+            <p style="color:rgba(255,255,255,.72)">Advanced laser resurfacing, pigmentation correction, acne scar treatment, and permanent hair removal.</p>
+            <a href="#booking" class="svc-link svc-link--white">Book Session <span>→</span></a>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 reveal" data-delay="120">
+          <div class="svc-card">
+            <div class="svc-num">03</div>
+            <div class="svc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z"/></svg>
+            </div>
+            <h3>Botox & Fillers</h3>
+            <p>Natural-looking anti-aging results with expert-placed Botox, hyaluronic acid fillers, and lip enhancement.</p>
+            <a href="#booking" class="svc-link">Book Session <span>→</span></a>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 reveal" data-delay="0">
+          <div class="svc-card">
+            <div class="svc-num">04</div>
+            <div class="svc-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
             </div>
-            <div class="sc-num">04</div>
-            <h3 class="sc-title">Body Contouring</h3>
-            <p class="sc-desc">Non-invasive fat reduction and body sculpting with CoolSculpting, HIFU, and radiofrequency lifting.</p>
-            <a href="#booking" class="sc-link">Book Treatment <span>→</span></a>
+            <h3>Body Sculpting</h3>
+            <p>Non-surgical fat reduction and skin tightening with CoolSculpting, HIFU, and radiofrequency technology.</p>
+            <a href="#booking" class="svc-link">Book Session <span>→</span></a>
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-4 anim-reveal" data-delay="80">
-          <div class="service-card">
-            <div class="sc-icon">
+        <div class="col-sm-6 col-lg-4 reveal" data-delay="60">
+          <div class="svc-card">
+            <div class="svc-num">05</div>
+            <div class="svc-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zm-7.518-.267A8.25 8.25 0 1120.25 10.5M8.288 14.212A5.25 5.25 0 1117.25 10.5"/></svg>
             </div>
-            <div class="sc-num">05</div>
-            <h3 class="sc-title">Thread Lifting</h3>
-            <p class="sc-desc">Minimally invasive PDO thread lifts for immediate skin tightening — no surgery, no downtime needed.</p>
-            <a href="#booking" class="sc-link">Book Treatment <span>→</span></a>
+            <h3>Thread Lift</h3>
+            <p>Immediate, visible skin tightening with PDO threads — zero surgery, zero downtime, maximum lift.</p>
+            <a href="#booking" class="svc-link">Book Session <span>→</span></a>
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-4 anim-reveal" data-delay="160">
-          <div class="service-card">
-            <div class="sc-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"/></svg>
+        <div class="col-sm-6 col-lg-4 reveal" data-delay="120">
+          <div class="svc-card">
+            <div class="svc-num">06</div>
+            <div class="svc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"/></svg>
             </div>
-            <div class="sc-num">06</div>
-            <h3 class="sc-title">Hair Restoration</h3>
-            <p class="sc-desc">PRP, exosome therapy, and mesotherapy solutions for noticeable hair growth and scalp rejuvenation.</p>
-            <a href="#booking" class="sc-link">Book Treatment <span>→</span></a>
+            <h3>Hair Restoration</h3>
+            <p>PRP therapy, exosome injections, and scalp mesotherapy to stimulate hair growth at the cellular level.</p>
+            <a href="#booking" class="svc-link">Book Session <span>→</span></a>
           </div>
         </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ╔══════════════════════════════════════╗
+       ║  RESULTS (BEFORE / AFTER)            ║
+       ╚══════════════════════════════════════╝ -->
+  <section class="section" id="results">
+    <div class="container">
+
+      <div class="section-header text-center reveal">
+        <div class="eyebrow">Real Clients, Real Results</div>
+        <h2 class="section-title">Hundreds of <em>Before &amp; After</em></h2>
+        <p class="section-desc">Drag the handle to see each transformation. Every photo is from a real QM Glow client.</p>
+      </div>
+
+      <!-- Filter tabs -->
+      <div class="results-tabs reveal">
+        <button class="rtab active" data-tab="all">All</button>
+        <button class="rtab" data-tab="face">Face</button>
+        <button class="rtab" data-tab="skin">Skin</button>
+        <button class="rtab" data-tab="body">Body</button>
+      </div>
+
+      <div class="row g-4 results-grid" id="resultsGrid">
+
+        <div class="col-md-6 col-lg-4 result-item reveal" data-cat="face" data-delay="0">
+          <div class="result-card">
+            <div class="ba-slider" data-slider>
+              <div class="ba-side ba-before rb1"></div>
+              <div class="ba-side ba-after ra1"></div>
+              <div class="ba-drag"><div class="ba-track"></div><button class="ba-knob" aria-label="Drag to compare">⇔</button></div>
+            </div>
+            <div class="result-footer">
+              <div class="rt-tag">Botox + Fillers</div>
+              <h4>Facial Contouring</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 result-item reveal" data-cat="skin" data-delay="60">
+          <div class="result-card">
+            <div class="ba-slider" data-slider>
+              <div class="ba-side ba-before rb2"></div>
+              <div class="ba-side ba-after ra2"></div>
+              <div class="ba-drag"><div class="ba-track"></div><button class="ba-knob" aria-label="Drag to compare">⇔</button></div>
+            </div>
+            <div class="result-footer">
+              <div class="rt-tag">Laser Resurfacing</div>
+              <h4>Acne Scar Treatment</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 result-item reveal" data-cat="body" data-delay="120">
+          <div class="result-card">
+            <div class="ba-slider" data-slider>
+              <div class="ba-side ba-before rb3"></div>
+              <div class="ba-side ba-after ra3"></div>
+              <div class="ba-drag"><div class="ba-track"></div><button class="ba-knob" aria-label="Drag to compare">⇔</button></div>
+            </div>
+            <div class="result-footer">
+              <div class="rt-tag">CoolSculpting</div>
+              <h4>Waist Contouring</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 result-item reveal" data-cat="face" data-delay="0">
+          <div class="result-card">
+            <div class="ba-slider" data-slider>
+              <div class="ba-side ba-before rb4"></div>
+              <div class="ba-side ba-after ra4"></div>
+              <div class="ba-drag"><div class="ba-track"></div><button class="ba-knob" aria-label="Drag to compare">⇔</button></div>
+            </div>
+            <div class="result-footer">
+              <div class="rt-tag">Thread Lift</div>
+              <h4>Jawline Definition</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 result-item reveal" data-cat="skin" data-delay="60">
+          <div class="result-card">
+            <div class="ba-slider" data-slider>
+              <div class="ba-side ba-before rb5"></div>
+              <div class="ba-side ba-after ra5"></div>
+              <div class="ba-drag"><div class="ba-track"></div><button class="ba-knob" aria-label="Drag to compare">⇔</button></div>
+            </div>
+            <div class="result-footer">
+              <div class="rt-tag">Glow Therapy</div>
+              <h4>Skin Brightening</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 result-item reveal" data-cat="body" data-delay="120">
+          <div class="result-card">
+            <div class="ba-slider" data-slider>
+              <div class="ba-side ba-before rb6"></div>
+              <div class="ba-side ba-after ra6"></div>
+              <div class="ba-drag"><div class="ba-track"></div><button class="ba-knob" aria-label="Drag to compare">⇔</button></div>
+            </div>
+            <div class="result-footer">
+              <div class="rt-tag">PRP Hair</div>
+              <h4>Hair Restoration</h4>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-5 reveal">
+        <a href="#booking" class="btn btn-primary-solid">Book Your Consultation</a>
       </div>
 
     </div>
   </section>
 
-  <!-- ══════════════════════════════════════════
-       BEFORE / AFTER RESULTS
-  ══════════════════════════════════════════ -->
-  <section class="section-pad" id="results">
+  <!-- ╔══════════════════════════════════════╗
+       ║  TESTIMONIALS                        ║
+       ╚══════════════════════════════════════╝ -->
+  <section class="section bg-navy testimonials-section" id="testimonials">
     <div class="container">
 
-      <div class="section-header text-center anim-reveal">
-        <div class="section-eyebrow">Transformations</div>
-        <h2 class="section-title">Real <em>Results</em></h2>
-        <p class="section-desc">Drag the handle to see the difference. Every result is from a real QM Glow client.</p>
+      <div class="section-header text-center reveal">
+        <div class="eyebrow eyebrow--light">Client Reviews</div>
+        <h2 class="section-title text-white">What They <em class="em-faded">Say</em></h2>
       </div>
 
-      <div class="row g-4 mt-2">
-        <div class="col-md-6 col-lg-4 anim-reveal" data-delay="0">
-          <div class="result-card">
-            <div class="ba-slider" data-slider>
-              <div class="ba-before r-before-1"><span class="ba-pill">Before</span></div>
-              <div class="ba-after r-after-1"><span class="ba-pill ba-pill-after">After</span></div>
-              <div class="ba-handle"><div class="ba-line"></div><div class="ba-btn">⟺</div></div>
-            </div>
-            <div class="result-caption">
-              <span class="result-tag">Facial Rejuvenation</span>
-              <h4>Dermal Fillers + Botox</h4>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4 anim-reveal" data-delay="80">
-          <div class="result-card">
-            <div class="ba-slider" data-slider>
-              <div class="ba-before r-before-2"><span class="ba-pill">Before</span></div>
-              <div class="ba-after r-after-2"><span class="ba-pill ba-pill-after">After</span></div>
-              <div class="ba-handle"><div class="ba-line"></div><div class="ba-btn">⟺</div></div>
-            </div>
-            <div class="result-caption">
-              <span class="result-tag">Laser Skin</span>
-              <h4>CO2 Resurfacing</h4>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4 anim-reveal" data-delay="160">
-          <div class="result-card">
-            <div class="ba-slider" data-slider>
-              <div class="ba-before r-before-3"><span class="ba-pill">Before</span></div>
-              <div class="ba-after r-after-3"><span class="ba-pill ba-pill-after">After</span></div>
-              <div class="ba-handle"><div class="ba-line"></div><div class="ba-btn">⟺</div></div>
-            </div>
-            <div class="result-caption">
-              <span class="result-tag">Body Contouring</span>
-              <h4>CoolSculpting + RF</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="text-center mt-5 anim-reveal">
-        <a href="#booking" class="btn qm-btn-primary">Start Your Transformation</a>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ══════════════════════════════════════════
-       TESTIMONIALS
-  ══════════════════════════════════════════ -->
-  <section class="section-pad bg-deep" id="testimonials">
-    <div class="container">
-
-      <div class="section-header text-center anim-reveal">
-        <div class="section-eyebrow section-eyebrow--light">Client Reviews</div>
-        <h2 class="section-title text-white">What Our <em>Clients</em> Say</h2>
-      </div>
-
-      <div class="testimonials-wrapper anim-reveal">
+      <div class="testi-slider reveal">
         <div class="testi-track" id="testiTrack">
 
-          <div class="testi-card glass-card-dark">
-            <div class="testi-stars">★★★★★</div>
-            <p class="testi-text">"QM Glow completely transformed my skin. The results from my laser treatment exceeded every expectation — I look years younger and feel more confident than ever."</p>
-            <div class="testi-author">
-              <div class="testi-avatar" style="background:linear-gradient(135deg,#1D4FBB,#4F8EF0)">S</div>
-              <div>
-                <strong>Sarah A.</strong>
-                <span>Laser Treatment Client</span>
+          <div class="testi-slide">
+            <div class="testi-card">
+              <div class="tc-stars">★★★★★</div>
+              <blockquote>"I tried everything for my acne scars — nothing worked until QM Glow. After two laser sessions, my skin looks better than it ever has. The doctor actually listened and found what was causing it."</blockquote>
+              <div class="tc-author">
+                <div class="tc-avatar" style="background:linear-gradient(135deg,#1A4FBA,#4F8EF0)">S</div>
+                <div><strong>Sarah Al-Mansouri</strong><span>Laser Resurfacing Client</span></div>
               </div>
             </div>
           </div>
 
-          <div class="testi-card glass-card-dark">
-            <div class="testi-stars">★★★★★</div>
-            <p class="testi-text">"The team is absolutely professional and warm. My thread lift results are natural, lifted, and exactly what I hoped for. The clinic feels like a luxury spa."</p>
-            <div class="testi-author">
-              <div class="testi-avatar" style="background:linear-gradient(135deg,#7C3AED,#A78BFA)">N</div>
-              <div>
-                <strong>Nadia M.</strong>
-                <span>Thread Lift Client</span>
+          <div class="testi-slide">
+            <div class="testi-card">
+              <div class="tc-stars">★★★★★</div>
+              <blockquote>"The thread lift results are incredibly natural. No one can tell I had a procedure — they just think I look rested and younger. The team made me feel completely at ease throughout."</blockquote>
+              <div class="tc-author">
+                <div class="tc-avatar" style="background:linear-gradient(135deg,#6D28D9,#A78BFA)">N</div>
+                <div><strong>Nadia Hassan</strong><span>Thread Lift Client</span></div>
               </div>
             </div>
           </div>
 
-          <div class="testi-card glass-card-dark">
-            <div class="testi-stars">★★★★★</div>
-            <p class="testi-text">"I've tried many clinics, but QM Glow is on a completely different level. The attention to detail and follow-up care is truly exceptional. Highly recommended!"</p>
-            <div class="testi-author">
-              <div class="testi-avatar" style="background:linear-gradient(135deg,#0E7490,#38BDF8)">R</div>
-              <div>
-                <strong>Reem K.</strong>
-                <span>Facial Rejuvenation</span>
+          <div class="testi-slide">
+            <div class="testi-card">
+              <div class="tc-stars">★★★★★</div>
+              <blockquote>"8 years of struggling with uneven skin tone. Three sessions of Glow Therapy and I finally have the luminous skin I always wanted. I only wish I had found QM Glow sooner!"</blockquote>
+              <div class="tc-author">
+                <div class="tc-avatar" style="background:linear-gradient(135deg,#0E7490,#22D3EE)">R</div>
+                <div><strong>Reem Khaled</strong><span>Glow Therapy Client</span></div>
               </div>
             </div>
           </div>
 
-          <div class="testi-card glass-card-dark">
-            <div class="testi-stars">★★★★★</div>
-            <p class="testi-text">"The body contouring results are incredible. After just 3 sessions I could see a significant difference. The staff made me feel comfortable the entire time."</p>
-            <div class="testi-author">
-              <div class="testi-avatar" style="background:linear-gradient(135deg,#065F46,#34D399)">L</div>
-              <div>
-                <strong>Layla H.</strong>
-                <span>Body Contouring Client</span>
+          <div class="testi-slide">
+            <div class="testi-card">
+              <div class="tc-stars">★★★★★</div>
+              <blockquote>"From my first consultation they identified the exact cause of my hair thinning. The PRP sessions have given me visible regrowth and the confidence I lost. Absolutely life changing."</blockquote>
+              <div class="tc-author">
+                <div class="tc-avatar" style="background:linear-gradient(135deg,#065F46,#34D399)">K</div>
+                <div><strong>Khalid Ibrahim</strong><span>Hair Restoration Client</span></div>
               </div>
             </div>
           </div>
 
         </div>
 
-        <div class="testi-controls">
-          <button class="testi-btn" id="testiPrev" aria-label="Previous">←</button>
-          <div class="testi-dots" id="testiDots"></div>
-          <button class="testi-btn" id="testiNext" aria-label="Next">→</button>
+        <div class="testi-nav">
+          <button class="tnav-btn" id="testiPrev" aria-label="Previous review">←</button>
+          <div class="tnav-dots" id="testiDots"></div>
+          <button class="tnav-btn" id="testiNext" aria-label="Next review">→</button>
         </div>
       </div>
 
     </div>
   </section>
 
-  <!-- ══════════════════════════════════════════
-       PAYMENT CTA
-  ══════════════════════════════════════════ -->
-  <section class="payment-section section-pad" id="pricing">
-    <div class="container">
-      <div class="payment-card anim-reveal">
-        <div class="row align-items-center g-5">
-          <div class="col-lg-7">
-            <div class="section-eyebrow">Special Offer</div>
-            <h2 class="section-title mb-3">Begin with a<br /><em>Complimentary Consultation</em></h2>
-            <p class="payment-desc">Book your free consultation valued at <strong>$150</strong> — with no obligation. Our specialists will create a fully personalized treatment plan designed around your skin goals.</p>
-            <ul class="payment-perks">
-              <li><span class="perk-icon">✓</span> Full skin analysis &amp; assessment</li>
-              <li><span class="perk-icon">✓</span> Personalized treatment plan</li>
-              <li><span class="perk-icon">✓</span> Exclusive new client pricing</li>
-              <li><span class="perk-icon">✓</span> Flexible payment plans available</li>
-            </ul>
-          </div>
-          <div class="col-lg-5">
-            <div class="payment-cta-box">
-              <div class="pct-label">Free Consultation</div>
-              <div class="pct-price">
-                <span class="pct-was">$150</span>
-                <span class="pct-now">FREE</span>
-              </div>
-              <p class="pct-note">Limited spots available this month</p>
-              <a href="#booking" class="btn qm-btn-primary btn-lg w-100 mb-3">Reserve My Spot</a>
-              <a href="#booking" class="btn qm-btn-outline w-100">Pay & Book Treatment</a>
-              <p class="pct-secure">
-                <svg class="lock-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd"/></svg>
-                Secure &amp; Confidential · No Pressure
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══════════════════════════════════════════
-       BOOKING / CONTACT
-  ══════════════════════════════════════════ -->
-  <section class="section-pad bg-light-blue" id="booking">
+  <!-- ╔══════════════════════════════════════╗
+       ║  BOOKING                             ║
+       ╚══════════════════════════════════════╝ -->
+  <section class="section booking-section" id="booking">
     <div class="container">
       <div class="row g-5 align-items-start">
 
-        <div class="col-lg-5 anim-reveal-left">
-          <div class="section-eyebrow">Book Now</div>
-          <h2 class="section-title">Request Your<br /><em>Consultation</em></h2>
-          <p class="mb-4" style="color:var(--text-muted)">Fill in your details and our team will reach out within 24 hours to confirm your appointment. No obligation, no pressure.</p>
+        <!-- Left info -->
+        <div class="col-lg-5 reveal-left">
+          <div class="eyebrow">Free Consultation</div>
+          <h2 class="section-title">One Consultation.<br /><em>Months of Answers.</em></h2>
+          <p class="section-body">Stop guessing and start healing. Book your free consultation and walk away with a clear, personalized treatment roadmap designed specifically for your skin.</p>
 
-          <div class="contact-details">
-            <div class="contact-item">
-              <div class="ci-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
-              </div>
+          <div class="booking-highlights">
+            <div class="bh-item">
+              <div class="bhi-num">01</div>
               <div>
-                <strong>Location</strong>
-                <span>123 Luxury Ave, Suite 400, Beverly Hills, CA</span>
+                <strong>Full Skin Analysis</strong>
+                <span>Deep-dive assessment of your skin concerns and triggers</span>
               </div>
             </div>
-            <div class="contact-item">
-              <div class="ci-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
-              </div>
+            <div class="bh-item">
+              <div class="bhi-num">02</div>
               <div>
-                <strong>Phone</strong>
-                <span>+1 (310) 555-0190</span>
+                <strong>Personalized Plan</strong>
+                <span>A step-by-step treatment protocol built for your goals</span>
               </div>
             </div>
-            <div class="contact-item">
-              <div class="ci-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-              </div>
+            <div class="bh-item">
+              <div class="bhi-num">03</div>
               <div>
-                <strong>Hours</strong>
-                <span>Mon – Sat: 9:00 AM – 7:00 PM</span>
+                <strong>No Obligation</strong>
+                <span>Zero pressure. You decide what's right for you.</span>
               </div>
+            </div>
+          </div>
+
+          <div class="booking-contact">
+            <div class="bc-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+              <span>+1 (310) 555-0190</span>
+            </div>
+            <div class="bc-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span>Mon – Sat &nbsp;·&nbsp; 9 AM – 7 PM</span>
+            </div>
+            <div class="bc-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+              <span>123 Luxury Blvd, Beverly Hills, CA</span>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-7 anim-reveal-right">
-          <div class="booking-card">
-            <h3 class="booking-title">Book a Free Consultation</h3>
-            <p class="booking-sub">We'll confirm within 24 hours</p>
+        <!-- Right form -->
+        <div class="col-lg-7 reveal-right">
+          <div class="booking-form-card">
+            <div class="bfc-top">
+              <h3>Book Your Free Consultation</h3>
+              <p>We'll confirm within 24 hours</p>
+            </div>
 
-            <form id="bookingForm" novalidate>
+            <form id="bookingForm" class="bfc-form" novalidate>
               <div class="row g-3">
                 <div class="col-sm-6">
-                  <div class="qm-form-group">
-                    <label>First Name *</label>
+                  <div class="fld">
+                    <label for="fName">First Name *</label>
                     <input type="text" id="fName" placeholder="Sarah" required />
-                    <div class="field-error">Please enter your first name.</div>
+                    <span class="fld-err">Required field</span>
                   </div>
                 </div>
                 <div class="col-sm-6">
-                  <div class="qm-form-group">
-                    <label>Last Name *</label>
+                  <div class="fld">
+                    <label for="lName">Last Name *</label>
                     <input type="text" id="lName" placeholder="Ahmed" required />
-                    <div class="field-error">Please enter your last name.</div>
+                    <span class="fld-err">Required field</span>
                   </div>
                 </div>
                 <div class="col-sm-6">
-                  <div class="qm-form-group">
-                    <label>Email Address *</label>
+                  <div class="fld">
+                    <label for="fEmail">Email *</label>
                     <input type="email" id="fEmail" placeholder="sarah@email.com" required />
-                    <div class="field-error">Please enter a valid email.</div>
+                    <span class="fld-err">Valid email required</span>
                   </div>
                 </div>
                 <div class="col-sm-6">
-                  <div class="qm-form-group">
-                    <label>Phone Number</label>
+                  <div class="fld">
+                    <label for="fPhone">Phone</label>
                     <input type="tel" id="fPhone" placeholder="+1 (310) 555-0190" />
                   </div>
                 </div>
                 <div class="col-12">
-                  <div class="qm-form-group">
-                    <label>Treatment of Interest *</label>
+                  <div class="fld">
+                    <label for="fService">Main Concern *</label>
                     <select id="fService" required>
-                      <option value="" disabled selected>Select a treatment</option>
-                      <option>Facial Rejuvenation (Botox / Fillers)</option>
-                      <option>Laser Treatments</option>
-                      <option>Skin Brightening</option>
+                      <option value="" disabled selected>What brings you in?</option>
+                      <option>Acne / Breakouts</option>
+                      <option>Skin Pigmentation / Dark Spots</option>
+                      <option>Anti-Aging / Wrinkles</option>
+                      <option>Laser Hair Removal</option>
                       <option>Body Contouring</option>
-                      <option>Thread Lifting</option>
-                      <option>Hair Restoration</option>
-                      <option>General Consultation</option>
+                      <option>Hair Loss / Thinning</option>
+                      <option>General Skin Glow</option>
+                      <option>Other</option>
                     </select>
-                    <div class="field-error">Please select a treatment.</div>
+                    <span class="fld-err">Please select a concern</span>
                   </div>
                 </div>
                 <div class="col-sm-6">
-                  <div class="qm-form-group">
-                    <label>Preferred Date</label>
+                  <div class="fld">
+                    <label for="fDate">Preferred Date</label>
                     <input type="date" id="fDate" />
                   </div>
                 </div>
                 <div class="col-sm-6">
-                  <div class="qm-form-group">
-                    <label>Preferred Time</label>
+                  <div class="fld">
+                    <label for="fTime">Preferred Time</label>
                     <select id="fTime">
                       <option value="" disabled selected>Select time</option>
-                      <option>9:00 AM</option>
-                      <option>10:00 AM</option>
-                      <option>11:00 AM</option>
-                      <option>12:00 PM</option>
-                      <option>2:00 PM</option>
-                      <option>3:00 PM</option>
-                      <option>4:00 PM</option>
-                      <option>5:00 PM</option>
+                      <option>9:00 AM</option><option>10:00 AM</option>
+                      <option>11:00 AM</option><option>12:00 PM</option>
+                      <option>2:00 PM</option><option>3:00 PM</option>
+                      <option>4:00 PM</option><option>5:00 PM</option>
                     </select>
                   </div>
                 </div>
                 <div class="col-12">
-                  <div class="qm-form-group">
-                    <label>Message</label>
-                    <textarea id="fMessage" rows="3" placeholder="Tell us your goals or any concerns..."></textarea>
+                  <div class="fld">
+                    <label for="fNote">Additional Notes</label>
+                    <textarea id="fNote" rows="3" placeholder="Anything else we should know before your consultation?"></textarea>
                   </div>
                 </div>
                 <div class="col-12">
-                  <button type="submit" class="btn qm-btn-primary w-100 btn-lg" id="submitBtn">
-                    Book Free Consultation
-                    <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                  <button type="submit" class="btn btn-primary-solid w-100" id="fSubmit">
+                    Confirm Free Consultation
+                    <svg class="btn-arrow" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
                   </button>
-                  <p class="form-note">🔒 Your information is 100% confidential and secure.</p>
+                  <p class="fld-note">🔒 Private &amp; confidential. No spam, no pressure.</p>
                 </div>
               </div>
             </form>
 
-            <div class="form-success" id="formSuccess">
-              <div class="success-check">✓</div>
-              <h4>Consultation Booked!</h4>
-              <p>Thank you! Our team will confirm your appointment within 24 hours.</p>
-              <a href="#services" class="btn qm-btn-primary mt-3">Explore More Treatments</a>
+            <div class="bfc-success" id="formSuccess">
+              <div class="success-mark">✓</div>
+              <h4>You're Booked!</h4>
+              <p>We'll confirm your free consultation within 24 hours. Check your inbox.</p>
+              <a href="#services" class="btn btn-primary-solid mt-4">Explore Treatments</a>
             </div>
 
           </div>
@@ -549,66 +635,72 @@
     </div>
   </section>
 
-  <!-- ══════════════════════════════════════════
-       FOOTER
-  ══════════════════════════════════════════ -->
-  <footer class="qm-footer">
-    <div class="footer-top">
+  <!-- ╔══════════════════════════════════════╗
+       ║  FOOTER                              ║
+       ╚══════════════════════════════════════╝ -->
+  <footer class="site-footer">
+    <div class="footer-body">
       <div class="container">
         <div class="row g-5">
+
           <div class="col-lg-4">
-            <a class="navbar-brand qm-brand mb-4" href="#home">
-              <div class="brand-icon">Q</div>
-              <div class="brand-text">
-                <span class="brand-name" style="color:#fff">QM Glow</span>
-                <span class="brand-tagline" style="color:rgba(255,255,255,.5)">Aesthetic Center</span>
+            <a class="site-logo" href="#home" style="display:inline-flex;margin-bottom:20px">
+              <div class="logo-icon">Q</div>
+              <div class="logo-words">
+                <span class="logo-main" style="color:#fff">QM Glow</span>
+                <span class="logo-sub" style="color:rgba(255,255,255,.45)">Center</span>
               </div>
             </a>
-            <p class="footer-desc">Premium aesthetic treatments delivered by board-certified specialists. Your beauty journey starts here.</p>
-            <div class="footer-social">
-              <a href="#" class="fsoc-btn" aria-label="Instagram">ig</a>
-              <a href="#" class="fsoc-btn" aria-label="Facebook">fb</a>
-              <a href="#" class="fsoc-btn" aria-label="TikTok">tk</a>
-              <a href="#" class="fsoc-btn" aria-label="YouTube">yt</a>
+            <p class="footer-tagline">We find the real cause. We fix it. Step by step.</p>
+            <div class="footer-socials">
+              <a href="#" class="fsoc" aria-label="Instagram">ig</a>
+              <a href="#" class="fsoc" aria-label="TikTok">tk</a>
+              <a href="#" class="fsoc" aria-label="Facebook">fb</a>
+              <a href="#" class="fsoc" aria-label="YouTube">yt</a>
             </div>
           </div>
+
           <div class="col-6 col-lg-2">
-            <h6 class="footer-heading">Treatments</h6>
-            <ul class="footer-list">
-              <li><a href="#services">Facial Rejuvenation</a></li>
+            <h6 class="footer-h">Treatments</h6>
+            <ul class="footer-ul">
+              <li><a href="#services">Glow Therapy</a></li>
               <li><a href="#services">Laser Treatments</a></li>
-              <li><a href="#services">Body Contouring</a></li>
-              <li><a href="#services">Thread Lifting</a></li>
+              <li><a href="#services">Botox &amp; Fillers</a></li>
+              <li><a href="#services">Body Sculpting</a></li>
+              <li><a href="#services">Thread Lift</a></li>
               <li><a href="#services">Hair Restoration</a></li>
             </ul>
           </div>
+
           <div class="col-6 col-lg-2">
-            <h6 class="footer-heading">Clinic</h6>
-            <ul class="footer-list">
-              <li><a href="#home">About Us</a></li>
+            <h6 class="footer-h">Clinic</h6>
+            <ul class="footer-ul">
+              <li><a href="#about">About Us</a></li>
               <li><a href="#results">Results</a></li>
               <li><a href="#testimonials">Reviews</a></li>
               <li><a href="#booking">Book Now</a></li>
-              <li><a href="#">Careers</a></li>
             </ul>
           </div>
+
           <div class="col-lg-4">
-            <h6 class="footer-heading">Stay in Touch</h6>
-            <p class="footer-nl-text">Get exclusive offers and skincare tips delivered to your inbox.</p>
-            <form class="footer-nl-form" id="nlForm">
+            <h6 class="footer-h">Get Skin Tips</h6>
+            <p class="footer-nl-p">Subscribe for exclusive skincare advice and early access to new treatments.</p>
+            <form class="footer-nl" id="nlForm">
               <input type="email" placeholder="your@email.com" required />
               <button type="submit">Subscribe</button>
             </form>
           </div>
+
         </div>
       </div>
     </div>
-    <div class="footer-bottom">
-      <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+    <div class="footer-bar">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
         <p>© 2024 QM Glow Center. All rights reserved.</p>
         <div class="footer-legal">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
         </div>
       </div>
     </div>
@@ -616,8 +708,7 @@
 
   <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
   <script src="./script.js"></script>
 </body>
 </html>
